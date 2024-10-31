@@ -1,0 +1,6 @@
+@Simple_Book_Collection_Manager_HostAddress = http://localhost:5231
+
+GET {{Simple_Book_Collection_Manager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
