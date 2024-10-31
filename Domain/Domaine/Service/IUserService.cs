@@ -13,5 +13,8 @@ namespace Domaine.Service
         public User DeleteUser(int userId);
 
         public IEnumerable<Book> GetUserBooks(int userId);
+
+        public IEnumerable<Book> et(int userId);
+
     }
 }
