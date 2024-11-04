@@ -12,8 +12,6 @@ namespace Domaine.Model
         public string Description { get; set; }
         public bool IsRead { get; set; }
         public int? Rating { get; set; } 
-        public string PersonalNotes { get; set; }
-        public string CoverImagePath { get; set; }
     }
 
 }
