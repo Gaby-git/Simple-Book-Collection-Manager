@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Constants\" />
-    <Folder Include="Results\" />
-    <Folder Include="Store\" />
+    <ProjectReference Include="..\Domain\Domaine\Domaine.csproj" />
   </ItemGroup>
 
 </Project>
