@@ -1,0 +1,11 @@
+USE [SBCMS]
+GO
+
+CREATE OR ALTER PROCEDURE [dbo].[GetUser]
+	AS
+	BEGIN;
+
+	SELECT * FROM [User];
+
+	END;
+GO

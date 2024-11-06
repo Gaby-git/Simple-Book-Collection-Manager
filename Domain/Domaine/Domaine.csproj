@@ -9,7 +9,10 @@
   <ItemGroup>
     <Folder Include="Constants\" />
     <Folder Include="Results\" />
-    <Folder Include="Store\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
 </Project>
