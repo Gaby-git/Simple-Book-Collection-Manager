@@ -32,5 +32,14 @@ namespace Simple_Book_Collection_Manager.Controllers
 
             return Ok(getById);
         }
+
+        [HttpGet] 
+
+        public IActionResult GetUser(User user)
+        {
+            var GetUser = _userService.GetUser(user);
+
+            return Ok(GetUser);
+        }
     }
 }

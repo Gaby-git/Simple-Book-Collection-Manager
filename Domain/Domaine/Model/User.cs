@@ -7,7 +7,7 @@ namespace Domaine.Model
         public string Username { get; set; }
         public string Email { get; set; }
         public string PasswordHash { get; set; }
-        public ICollection<Book> Books { get; set; } // Collection of books associated with the user
+        public ICollection<Book> Books { get; set; }
     }
 
 }

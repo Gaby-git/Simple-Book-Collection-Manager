@@ -1,4 +1,5 @@
-﻿
+﻿using Microsoft.Extensions.Configuration;
+
 namespace Infrastructure
 {
     public class AppSettingsWeb : IAppSettingsWeb

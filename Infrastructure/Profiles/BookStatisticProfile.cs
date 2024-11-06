@@ -1,10 +1,14 @@
-﻿namespace Infrastructure.Profiles
+﻿using AutoMapper;
+using Domaine.Model;
+
+
+namespace Infrastructure.Profiles
 {
-    public class BookStatisticProfile
+    public class BookStatisticProfile : Profile
     {
         public BookStatisticProfile()
         {
-            CreateMap<Entities.Bookstatistics, Domaine.Model.Bookstatistics>();
+            CreateMap<Entities.Bookstatistics, BookStatistics>();
 
         }
     }

@@ -1,6 +1,8 @@
-﻿namespace Infrastructure.Profiles
+﻿using AutoMapper;
+
+namespace Infrastructure.Profiles
 {
-    public class GenreProfile
+    public class GenreProfile : Profile
     {
         public GenreProfile ()
         {

@@ -1,5 +1,6 @@
 ﻿using Domaine.Model;
 using Domaine.Service;
+using Domaine.Stores;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,12 @@ namespace Application.Service
 {
     public class UserService : IUserService
     {
+        private readonly IUserStore _userStore;
+
+        public UserService (IUserStore userStore)
+        {
+            _userStore = userStore;
+        }
         public User AddUser (User user)
         {
             return default (User);
@@ -17,7 +24,9 @@ namespace Application.Service
 
         public IEnumerable<User> GetUser (User user)
         {
-            return default(IEnumerable<User>);
+            var getUsers = _userStore.GetUsers ();
+
+            return getUsers;
         }
 
         public User GetUserById(int userId)
